@@ -1,13 +1,22 @@
 <template>
-  <div class="sidebar-logo-container" :class="{'collapse':collapse}">
+  <div class="sidebar-logo-container" :class="{ collapse: collapse }">
     <transition name="sidebarLogoFade">
-      <router-link v-if="collapse" key="collapse" class="sidebar-logo-link" to="/">
+      <router-link
+        v-if="collapse"
+        key="collapse"
+        class="sidebar-logo-link"
+        to="/"
+      >
         <!-- <img v-if="logo" src="@/assets/images/menu_logo.png" class="sidebar-logo"> -->
         <!-- <h1 v-else class="sidebar-title">{{ MW }} </h1> -->
         <div class="logon_text">MW</div>
       </router-link>
       <router-link v-else key="expand" class="sidebar-logo-link" to="/">
-        <img v-if="logo" src="@/assets/images/menu_logo.png" class="sidebar-logo">
+        <img
+          v-if="logo"
+          src="@/assets/images/menu_logo.jpg"
+          class="sidebar-logo"
+        >
       </router-link>
     </transition>
   </div>
@@ -25,14 +34,14 @@ export default {
   data() {
     return {
       title: 'Vue Element Admin',
-      logo: 'https://wpimg.wallstcn.com/69a1c46c-eb1c-4b46-8bd4-e9e686ef5251.png'
+      logo:
+        'https://wpimg.wallstcn.com/69a1c46c-eb1c-4b46-8bd4-e9e686ef5251.png'
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
 .sidebarLogoFade-enter-active {
   transition: opacity 1.5s;
 }
@@ -47,7 +56,7 @@ export default {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  background: #0a1553;
+  background: #172c3c;
   text-align: center;
   overflow: hidden;
   & .sidebar-logo-link {
@@ -59,6 +68,7 @@ export default {
       // height: 32px;
       vertical-align: middle;
       // margin-right: 12px;
+      height: 100%;
     }
 
     & .sidebar-title {
@@ -76,11 +86,11 @@ export default {
   &.collapse {
     height: 50px;
     width: 100%;
-    .sidebar-logo-link{
+    .sidebar-logo-link {
       height: 100%;
       width: 100%;
       display: block !important;
-      .logon_text{
+      .logon_text {
         color: #fff;
         text-align: center;
         line-height: 50px;

@@ -21,12 +21,12 @@
         </div>
         <el-footer class="footer_content">
           <div class="pull-right">
-            Copyright © 2020 深圳市新国都末微技术服务有限公司
+            Copyright © 2020 大明技术有限公司
             <a target="_blank" href="http://www.beian.miit.gov.cn/">
               粤ICP备18023502号-1
             </a>
             2021
-            <a href="javascript:void(0);">新微物联管理平台</a>
+            <a href="javascript:void(0);">大明技术有限公司</a>
           </div>
         </el-footer>
       </el-col>
@@ -60,7 +60,7 @@ export default {
       height: 100%;
       overflow: auto;
       padding: 0 !important;
-    //   position: relative;
+      //   position: relative;
       &.left_container {
         border-right: 1px solid $comBorder;
         padding: 16px !important;
@@ -76,10 +76,10 @@ export default {
     min-height: 100px;
     border-bottom: 1px solid $comBorder;
   }
-  .main_container{
-      height: calc(100% - 61px);
-      overflow-y: auto;
-      overflow-x: hidden;
+  .main_container {
+    height: calc(100% - 61px);
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   .footer_content {
     height: 60px !important;

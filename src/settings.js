@@ -1,5 +1,5 @@
 module.exports = {
-  title: '新微物联管理平台',
+  title: '大明技术有限公司',
 
   /**
    * @type {boolean} true | false

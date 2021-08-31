@@ -14,12 +14,12 @@
       <app-main />
       <!-- <el-footer class="footer_content">
         <div class="pull-right">
-          Copyright © 2020 深圳市新国都末微技术服务有限公司
+          Copyright © 2020 大明技术有限公司
           <a target="_blank" href="http://www.beian.miit.gov.cn/">
             粤ICP备18023502号-1
           </a>
           2021
-          <a href="javascript:void(0);">新微物联管理平台</a>
+          <a href="javascript:void(0);">大明技术有限公司</a>
         </div>
       </el-footer> -->
       <!-- <right-panel v-if="showSettings">

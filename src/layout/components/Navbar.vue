@@ -6,7 +6,7 @@
       class="hamburger-container"
       @toggleClick="toggleSideBar"
     />
-    <div class="nav_system">新微物联管理平台</div>
+    <div class="nav_system">大明技术有限公司</div>
     <breadcrumb id="breadcrumb-container" class="breadcrumb-container" />
 
     <div class="right-menu">
@@ -23,9 +23,9 @@
 
       </template> -->
       <div class="nav_system">
-        <span class="origin_name">当前机构：新国都 欢迎您：</span>
+        <span class="origin_name">当前机构：大明公司 欢迎您：</span>
         <span class="user_name">
-          {{ userInfo.username }}
+          {{ userInfo.username || 'vvmily' }}
           <!-- <i class="el-icon-caret-bottom" /> -->
         </span>
       </div>
@@ -36,7 +36,7 @@
         <div class="avatar-wrapper">
           <div class="avatar_image">
             <!-- <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar"> -->
-            <span>MW</span>
+            <span>vv</span>
           </div>
           <!-- <i class="el-icon-caret-bottom" /> -->
         </div>
