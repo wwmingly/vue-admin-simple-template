@@ -23,7 +23,7 @@
       <div class="nav_system">
         <span class="origin_name">当前机构：大明公司 欢迎您：</span>
         <span class="user_name">
-          {{ userInfo.username || 'vvmily' }}
+          {{ name || '---' }}
           <!-- <i class="el-icon-caret-bottom" /> -->
         </span>
       </div>
@@ -59,7 +59,7 @@
 import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
-import ErrorLog from '@/components/ErrorLog'
+// import ErrorLog from '@/components/ErrorLog'
 import Screenfull from '@/components/Screenfull'
 import Search from '@/components/HeaderSearch'
 import Cookies from 'js-cookie'
@@ -67,7 +67,7 @@ export default {
   components: {
     Breadcrumb,
     Hamburger,
-    ErrorLog,
+    // ErrorLog,
     Screenfull,
     Search
   },
@@ -77,7 +77,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['sidebar', 'avatar', 'device'])
+    ...mapGetters(['sidebar', 'avatar', 'device', 'name'])
   },
   created() {
     this.initData()

@@ -1,5 +1,4 @@
 import request from '@/utils/request'
-import { login } from '../user'
 
 export default {
   getCode(params) {
