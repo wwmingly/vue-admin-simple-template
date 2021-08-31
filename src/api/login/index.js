@@ -17,9 +17,7 @@ export default {
       url: '/auth/login',
       method: 'post',
       data,
-      headers: {
-
-      }
+      headers: {}
     })
   },
   getInfo(data) {
@@ -27,9 +25,7 @@ export default {
       url: '/auth/login',
       method: 'post',
       data,
-      headers: {
-
-      }
+      headers: {}
     })
   },
   logout(data) {
@@ -37,9 +33,7 @@ export default {
       url: '/auth/login',
       method: 'post',
       data,
-      headers: {
-
-      }
+      headers: {}
     })
   }
 }

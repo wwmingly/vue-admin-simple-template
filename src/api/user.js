@@ -1,47 +1,38 @@
-import request from '@/utils/request'
-
-// export function login(data) {
-//   return request({
-//     url: '/vue-element-admin/user/login',
-//     method: 'post',
-//     data
-//   })
-// }
-
-// export function getInfo(token) {
-//   return request({
-//     url: '/vue-element-admin/user/info',
-//     method: 'get',
-//     params: { token }
-//   })
-// }
-
-// export function logout() {
-//   return request({
-//     url: '/vue-element-admin/user/logout',
-//     method: 'post'
-//   })
-// }
+// import request from '@/utils/request'
 
 export function login(data) {
-  return request({
-    url: '/auth/login',
-    method: 'post',
-    data
+  return new Promise((resolve, reject) => {
+    resolve({
+      code: 200,
+      data: {
+        access_token: 'text-token'
+      }
+    })
   })
 }
 
 export function getInfo(token) {
-  return request({
-    url: '/auth/refresh',
-    method: 'post',
-    data: {}
+  return new Promise((resolve, reject) => {
+    resolve({
+      code: 200,
+      // 模拟用户信息
+      data: {
+        roles: ['admin'],
+        avatar: '',
+        introduction: '',
+        username: 'vvmily'
+      }
+    })
   })
 }
 
 export function logout() {
-  return request({
-    url: '/auth/logout',
-    method: 'DELETE'
+  return new Promise((resolve, reject) => {
+    resolve({
+      code: 200,
+      data: {
+        message: '退出成功'
+      }
+    })
   })
 }
